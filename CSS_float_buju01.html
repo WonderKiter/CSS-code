@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS_float_01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .logo {
+        border: 1px solid red;
+        height: 40px;
+        width: 100px;
+        float: left;
+        margin-top: 5px;
+      }
+      nav {
+        border: 1px solid green;
+        width: 200px;
+        height: 50px;
+        float: left;
+      }
+      header {
+        border: 1px solid black;
+      }
+      .user {
+        border: 1px solid blue;
+        height: 30px;
+        max-width: 100px;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="clearfix">
+      <div class="logo">XDML</div>
+      <nav>导航</nav>
+      <div class="user">我的名字</div>
+    </header>
+  </body>
+</html>
